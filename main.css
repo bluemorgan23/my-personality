@@ -1,8 +1,36 @@
 img {
     width: 200px;
+    height: 350px;
 }
 
-.intro {
+.topMenu {
     display: flex;
-    align-items: center;
+}
+
+.descriptionContainer {
+    display: flex;
+    background-color: lightblue;
+}
+
+.description {
+    font-style: italic;
+    font-size: 2em;
+}
+
+.infoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: lightsalmon;
+    
+}
+
+.info {
+    flex-basis: 100%;
+    font-weight: none;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
 }
