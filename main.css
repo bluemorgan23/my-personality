@@ -3,34 +3,52 @@ img {
     height: 350px;
 }
 
-.topMenu {
+.topMenu {                  /* container for entire top section */
     display: flex;
 }
 
-.descriptionContainer {
+.descriptionContainer {     /* container for the right side */
     display: flex;
     background-color: lightblue;
 }
 
-.description {
+.description {              /* actual text inside the container on the right */
     font-style: italic;
     font-size: 2em;
 }
 
-.infoContainer {
+.infoContainer {        /* container for the left side */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: lightsalmon;
+    background-color: darksalmon;
     
 }
 
-.info {
+.info {                 /* contents of left side */
     flex-basis: 100%;
-    font-weight: none;
+    font-weight: bolder;
+    color: black;
 }
+/* All of the above code deals with the top section of the document */
+
+/* All of the code below deals with the cards */
 
 .mainContainer {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+
+.mainContainer > div {
+    border: 1px solid black;
+}
+
+.swCard--list-container {
+    display: flex;
+}
+
+.swCard--header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
