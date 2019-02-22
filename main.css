@@ -1,11 +1,11 @@
 img {
     width: 200px;
-    height: 350px;
+    height: 300px;
 }
 
 .topMenu {                  /* container for entire top section */
     display: flex;
-    flex-direction: column-reverse; 
+    flex-direction: column; 
 }
 
 .descriptionContainer {     /* container for the right side */
@@ -21,17 +21,14 @@ p.description {              /* actual text inside the container on the right */
 .infoContainer {        /* container for the left side */
     display: flex;
     flex-direction: row;
-    background-color: darksalmon;
-    align-content: space-around;
+    background-color: lightseagreen;
+    justify-content: space-around;
 }
 
 .info {                 /* contents of left side */
-    flex-basis: 100%;
-    font-weight: bolder;
     color: black;
-    align-items: center;
-    display: flex;
 }
+
 /* All of the above code deals with the top section of the document */
 
 /* All of the code below deals with the cards */
@@ -41,16 +38,63 @@ p.description {              /* actual text inside the container on the right */
     flex-direction: column;
 }
 
-.mainContainer > div {
-    border: 1px solid black;
-}
 
 .swCard--list-container {
     display: flex;
+    background-color: lightseagreen;
+    
 }
 
 .swCard--header-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    background-color: lightseagreen;
 }
+
+.introContainer {
+    background-color: lightgreen;
+}
+
+.friendContainer {
+    background-color: lightblue;
+}
+
+.careerContainer {
+    background-color: lightgreen;
+}
+
+.workplaceContainer {
+    background-color: lightseagreen;
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: lightgreen;
+}
+
+.famousPeople {
+    height: 200px;
+    width: 150px;
+}
+
+figcaption {
+    font-weight: bold;
+}
+
+.linkContainer {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    margin: 5px 0px 5px 0px;
+
+}
+
+a {
+    font-size: 2em;
+}
+
+
