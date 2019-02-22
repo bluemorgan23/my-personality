@@ -5,6 +5,7 @@ img {
 
 .topMenu {                  /* container for entire top section */
     display: flex;
+    flex-direction: column-reverse; 
 }
 
 .descriptionContainer {     /* container for the right side */
@@ -12,23 +13,24 @@ img {
     background-color: lightblue;
 }
 
-.description {              /* actual text inside the container on the right */
+p.description {              /* actual text inside the container on the right */
     font-style: italic;
     font-size: 2em;
 }
 
 .infoContainer {        /* container for the left side */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row;
     background-color: darksalmon;
-    
+    align-content: space-around;
 }
 
 .info {                 /* contents of left side */
     flex-basis: 100%;
     font-weight: bolder;
     color: black;
+    align-items: center;
+    display: flex;
 }
 /* All of the above code deals with the top section of the document */
 
