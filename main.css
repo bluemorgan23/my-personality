@@ -1,31 +1,36 @@
-img {
+img.info {
     width: 200px;
     height: 300px;
 }
 
-.topMenu {                  /* container for entire top section */
+.topMenu {
+    /* container for entire top section */
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
-.descriptionContainer {     /* container for the right side */
+.descriptionContainer {
+    /* container for the right side */
     display: flex;
     background-color: lightblue;
 }
 
-p.description {              /* actual text inside the container on the right */
+p.description {
+    /* actual text inside the container on the right */
     font-style: italic;
     font-size: 2em;
 }
 
-.infoContainer {        /* container for the left side */
+.infoContainer {
+    /* container for the left side */
     display: flex;
     flex-direction: row;
     background-color: lightseagreen;
     justify-content: space-around;
 }
 
-.info {                 /* contents of left side */
+.info {
+    /* contents of left side */
     color: black;
 }
 
@@ -42,7 +47,7 @@ p.description {              /* actual text inside the container on the right */
 .swCard--list-container {
     display: flex;
     background-color: lightseagreen;
-    
+
 }
 
 .swCard--header-container {
@@ -50,6 +55,23 @@ p.description {              /* actual text inside the container on the right */
     flex-direction: row;
     justify-content: space-evenly;
     background-color: lightseagreen;
+}
+
+.swCard--header {
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+h4.friendCard {
+    text-align: center;
+}
+
+h4.careerCard {
+    text-align: center;
+}
+
+h4.workplaceCard {
+    text-align: center;
 }
 
 .introContainer {
@@ -68,12 +90,19 @@ p.description {              /* actual text inside the container on the right */
     background-color: lightseagreen;
 }
 
+.peopleContainer {
+    background-color: lightgreen;
+}
+
 .imgContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: lightgreen;
+}
+
+.famousPeople--header {
+    text-align: center;
 }
 
 .famousPeople {
@@ -97,4 +126,16 @@ a {
     font-size: 2em;
 }
 
+.introCard--quote {
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+}
 
+.introCard--list-container li {
+    padding: 10px;
+}
+
+.introCard--header {
+    text-align: center;
+}
